@@ -1,0 +1,17 @@
+・コンテナの作製
+docker container run --name myContainer -d httpd (myContainerはコンテナ名を入れる)
+
+	httpd：Apacheのイメージ名
+	-d：コンテナをバックグラウンドで動作（指定しないと起動してすぐ終わる）
+
+・コンテナの確認
+docker container ls
+	「docker ps」でも同じ効果　→　短いのでこっちの方が使う
+	停止中のコンテナも表示する場合は、「-a」オプションを使用
+
+
+・コンテナの停止
+docker container stop myContainer（stopの後は対象のコンテナ名）
+
+・コンテナの削除
+docker container rm myContainer（rmの後は対象のコンテナ名）
